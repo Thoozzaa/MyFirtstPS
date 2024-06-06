@@ -18,16 +18,16 @@ function Install-Software {
     Start-Process -FilePath $installerPath -ArgumentList $arguments -NoNewWindow -Wait
 }
 
-#Chrome
+#Install van Chrome
 Install-Software -url "https://dl.google.com/chrome/install/latest/chrome_installer.exe" `
                  -installerName "chrome_installer.exe" `
                  -arguments "/silent /install"
-#VLC
+#Install van VLC
 Install-Software -url "https://get.videolan.org/vlc/3.0.11.1/win64/vlc-3.0.11.1-win64.exe" `
                  -installerName "vlc_installer.exe" `
                  -arguments "/S"
 
-#7-Zip
+#Install van 7-Zip
 Install-Software -url "https://www.7-zip.org/a/7z1900-x64.exe" `
                  -installerName "7zip_installer.exe" `
                  -arguments "/S"
